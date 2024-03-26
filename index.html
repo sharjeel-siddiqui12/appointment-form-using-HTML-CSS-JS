@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="header">
+      <h1>APPOINT MY DOCTOR</h1>
+    </div>
+    <div class="main">
+      
+        <div class="mainForm">
+          <h2>Please Enter Patient Details</h2>
+          <p>Fill the form below &amp; submit your query we will contact you as soon as possible.</p><hr>
+          <form id="appointmentForm">
+            <div class="formDiv">
+              <label for="name" class="formLabel" id="Fname"> Full Name </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                class="formInput"
+              />
+            </div>
+            <div class="formDiv">
+                <label for="gender" class="formLabel"> Gender </label>  
+                  <select id="gender" name="gender" class="formInput" required>
+                      <option value="">Select Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option> 
+                  </select>
+              </div>
+            <div class="formDiv">
+              <label for="phone" class="formLabel"> Phone Number </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                class="formInput"
+              />
+            </div>
+            <div class="flex formOuter">
+              <div class=" formInner">
+                <div class="formDiv w-full">
+                  <label for="date" class="formLabel"> Date </label>
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    class="formInput"
+                  />
+                </div>
+              </div>
+              <div class="formInner">
+                <div class="formDiv">
+                  <label for="time" class="formLabel"> Time </label>
+                  <input
+                    type="time"
+                    name="time"
+                    id="time"
+                    class="formInput"
+                  />
+                </div>
+              </div>
+            </div>
+      
+            <div class="formDiv formpart3">
+              <label class="formLabel">
+                Address Details
+              </label>
+              <div class="flex formOuter">
+                <div class="formInner">
+                  <div class="formDiv">
+                    <input
+                      type="text"
+                      name="area"
+                      id="area"
+                      placeholder="street address"
+                      class="formInput"
+                    />
+                  </div>
+                </div>
+                <div class="formInner">
+                  <div class="formDiv">
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      placeholder="Enter city"
+                      class="formInput"
+                    />
+                  </div>
+                </div>
+                <div class="formInner">
+                  <div class="formDiv">
+                    <input
+                      type="text"
+                      name="area"
+                      id="area2"
+                      placeholder="street address 2"
+                      class="formInput"
+                    />
+                  </div>
+                </div>
+                <div class="formInner">
+                  <div class="formDiv">
+                    <input
+                      type="text"
+                      name="post-code"
+                      id="post-code"
+                      placeholder="Post Code"
+                      class="formInput"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="formDiv">
+                <label for="email" class="formLabel"> Email Address </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="formInput"
+                />
+              </div>
+              <div class="formDiv">
+                <label for="message" class="formLabel">Mention the details of previous counselling with us</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Enter your message"
+                  class="formInput"
+                  rows="5"
+                ></textarea>
+              </div>
+            <div class="formDiv">
+                <label class="formLabel">Select which type of appointment:</label>
+                <div class="formCheckboxes">
+                    <div class="formCheckbox">
+                        <input type="checkbox" id="heart" name="appointmentType" value="heart">
+                        <label for="heart">Heart</label>
+                    </div>
+                    <div class="formCheckbox">
+                        <input type="checkbox" id="eye" name="appointmentType" value="eye">
+                        <label for="eye">Eye</label>
+                    </div>
+                    <div class="formCheckbox">
+                        <input type="checkbox" id="hearing" name="appointmentType" value="hearing">
+                        <label for="hearing">Hearing</label>
+                    </div>
+                    <div class="formCheckbox">
+                        <input type="checkbox" id="blood" name="appointmentType" value="blood">
+                        <label for="blood">Blood</label>
+                    </div>
+                    <div class="formCheckbox">
+                        <input type="checkbox" id="counselling" name="appointmentType" value="counselling">
+                        <label for="counselling">Counselling</label>
+                    </div>
+                    <div class="formCheckbox">
+                        <input type="checkbox" id="skin" name="appointmentType" value="skin">
+                        <label for="skin">Skin</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="btn" type="button" onclick="submitForm()">Book Appointment</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="formDataDisplay" >
+        <h2>Form Data:</h2>
+        <div id="formData"></div>
+      </div>
+
+</body>
+</html>
+

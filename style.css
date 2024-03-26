@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    background-image: url(Healthcare-BGV-scaled.jpg);
+    background-size: cover;
+}
+
+.header{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: larger;
+  text-align: center;
+  color: #ffffff;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity here */
+    z-index: -1;
+}
+
+.formDiv {
+    margin-bottom: 20px;
+    
+}
+
+#Fname{
+    margin-top: 25px;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+}
+
+.mainForm {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 550px;
+    width: 100%;
+    background: transparent;
+    background-color: rgba(65, 65, 65, 0.438);
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px;
+}
+
+.mainForm > h2{
+    color: #ffffff;
+    text-align: center;
+}
+.mainForm > p{
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.formLabel {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+   
+
+.formInput {    
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+    box-shadow: 5px 5px 10px black;
+}
+
+#message{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+    box-shadow: 5px 5px 10px black;
+}
+#message:focus{
+  border-color: #6a64f1;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.09);
+}
+.formInput:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.09);
+}
+.btn {
+    height: 7vh;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.836);
+    background: #6a64f1;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    margin: 6px auto; 
+    border: none;
+}
+  
+.btn:hover{  
+    color: rgb(255, 255, 255);
+    box-shadow: 0 15px 40px #6b64f1ad;
+    cursor: pointer;
+}
+.formOuter {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.formInner {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 50%;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.formCheckboxes {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+}
+
+.formCheckbox {
+    width: calc(33.33% - 10px); 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+  #formDataDisplay{
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity here */
+    z-index: 1;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 15px 15px 15px 15px;
+    width: 30%;
+    display: none;
+    border: #ffffff double 2px;
+    border-radius: 10px;
+  }
+
+  #formDataDisplay > h2{
+    text-align: center;
+    font-size: x-large;
+  }
+  #formData{
+    font-size: larger;
+  }
+
