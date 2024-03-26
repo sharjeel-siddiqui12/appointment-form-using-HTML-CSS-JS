@@ -4,8 +4,6 @@
     box-sizing: border-box;
   }
   body {
-    margin-top: 200px;
-    margin-bottom: 200px;
     position: relative;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     background-image: url(Healthcare-BGV-scaled.jpg);
