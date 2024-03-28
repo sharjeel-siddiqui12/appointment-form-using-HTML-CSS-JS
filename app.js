@@ -12,9 +12,9 @@ function submitForm() {
   const phone = document.getElementById('phone').value;
   const date = document.getElementById('date').value;
   const time = document.getElementById('time').value;
-  const area = document.getElementById('area').value;
+  const street = document.getElementById('street').value;
   const city = document.getElementById('city').value;
-  const area2 = document.getElementById('area2').value;
+  const street2 = document.getElementById('street2').value;
   const postCode = document.getElementById('post-code').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
@@ -45,7 +45,7 @@ function submitForm() {
       alert('Please select a time.');
       return;
   }
-  if (area === '' || city === '' || area2 === '' || postCode === '') {
+  if (street === '' || city === '' || street2 === '' || postCode === '') {
       alert('Please fill in all address fields.');
       return;
   }
@@ -77,9 +77,9 @@ function submitForm() {
     <p><strong>Phone:</strong> ${phone}</p>
     <p><strong>Date:</strong> ${date}</p>
     <p><strong>Time:</strong> ${time}</p>
-    <p><strong>Area:</strong> ${area}</p>
+    <p><strong>Street address:</strong> ${street}</p>
     <p><strong>City:</strong> ${city}</p>
-    <p><strong>State:</strong> ${area2}</p>
+    <p><strong>Street line 2:</strong> ${street2}</p>
     <p><strong>Post Code:</strong> ${postCode}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Message:</strong> ${message}</p>

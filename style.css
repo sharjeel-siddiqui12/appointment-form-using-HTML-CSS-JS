@@ -25,7 +25,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity here */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
 
@@ -54,7 +54,7 @@ body::before {
     max-width: 550px;
     width: 100%;
     background: transparent;
-    background-color: rgba(65, 65, 65, 0.438);
+    background-color: rgba(65, 65, 65, 0.5);
     border-radius: 10px;
     box-shadow: 3px 3px 20px;
 }
@@ -163,7 +163,7 @@ body::before {
 }
 
   #formDataDisplay{
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity here */
+    background-color: rgba(0, 0, 0, 0.3); 
     z-index: 1;
     color: #ffffff;
     margin-left: auto;
@@ -182,5 +182,9 @@ body::before {
   }
   #formData{
     font-size: larger;
+  }
+
+  span{
+    color: red;
   }
 
