@@ -83,7 +83,7 @@ function submitForm() {
     <p><strong>Post Code:</strong> ${postCode}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Message:</strong> ${message}</p>
-    <p><strong>Appointment Type(s):</strong> ${Array.from(appointmentTypeCheckboxes).map(cb => cb.value).join(', ')}</p>
+    <p><strong>Appointment Type(s):</strong> ${Array.from(appointmentTypeCheckboxes).map(val => val.value).join(', ')}</p>
   `;
   formDataDisplay.style.display = 'block';
   }
